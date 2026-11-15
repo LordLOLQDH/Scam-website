@@ -1,28 +1,21 @@
 # Toolboxly
 
-A free collection of practical browser-based tools.
+Kostenlose Online-Werkzeuge auf Deutsch. Die Website ist statisch aufgebaut und kann über GitHub Pages veröffentlicht werden.
 
-## Current tools
-- Word counter
-- JSON formatter and minifier
-- Percentage calculator
-- Text case converter
-- Password generator
-- UUID generator
-- Text comparison
-- URL encoder and decoder
+## Ordnerstruktur
 
-## Run locally
-Open `index.html` in a modern browser. No build step or dependencies are required.
+- `index.html` – Startseite mit Suche und Kategorien
+- `assets/css/style.css` – gemeinsames Design
+- `assets/js/app.js` – Werkzeug-Logik
+- `tools/text/` – Textwerkzeuge
+- `tools/entwickler/` – Entwicklerwerkzeuge
+- `tools/mathematik/` – Mathematik
+- `tools/bilder/` – Bildwerkzeuge
 
-## Advertising
-The visible advertising areas are placeholders only. No real ads or tracking scripts are active.
+## Enthaltene Werkzeuge
 
-Before adding an advertising network:
-1. Have an eligible adult manage any advertising account where the provider requires account holders to be 18+.
-2. Check the host's current terms for commercial/advertising use.
-3. Add the provider's approved code only after the site is accepted.
-4. Publish accurate privacy, imprint, and consent information appropriate to the audience and region.
+Wortzähler, Groß-/Kleinschreibung, Zeilen sortieren, doppelte Zeilen entfernen, Leerzeichen bereinigen, Text umkehren, JSON-Formatierer, Base64-Konverter, URL-Codierer, UUID-Generator, Passwort-Generator, HTML-Zeichen umwandeln, Prozentrechner, Dreisatz, Durchschnitt, Mehrwertsteuer, Rabatt und Bildverkleinerung.
 
-## Privacy
-The included tools process their input in the browser. The site currently has no analytics, account system, backend, or advertising integration.
+## Werbung und Datenschutz
+
+Die Werbeflächen sind Platzhalter. Es ist kein Werbenetzwerk eingebunden. Vor echter Werbung müssen die Bedingungen des Hosting-Anbieters sowie Datenschutz- und Einwilligungsanforderungen geprüft werden. Erforderliche Werbekonten und Verträge müssen von einer volljährigen verantwortlichen Person geführt werden.
