@@ -1,2 +1,24 @@
 <!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2537104692874620" crossorigin="anonymous"></script><meta name="description" content="Bilder direkt im Browser bearbeiten. Kostenlose Online-Tools von Toolboxly."><title>Bildwerkzeuge – Toolboxly</title><link rel="stylesheet" href="../../assets/css/style.css?v=20261115"></head><body data-category="image"><header class="wrap top"><a class="brand" href="../../index.html">toolbox<span>ly</span></a><nav><a href="../../index.html#kategorien">Kategorien</a><a href="../../index.html#werkzeuge">Alle Werkzeuge</a></nav></header><main class="wrap"><div class="breadcrumbs"><a href="../../index.html">Startseite</a> / Bildwerkzeuge</div><section class="page-title"><span class="eyebrow">TOOLBOXLY · KATEGORIE</span><h1>Bildwerkzeuge</h1><p>Bilder direkt im Browser bearbeiten.</p></section><section><div class="section-head"><div><h2>Verfügbare Werkzeuge</h2><p>Wähle ein Werkzeug aus der Liste.</p></div><span id="count" style="font-size:12px;color:var(--muted)"></span></div><div class="grid" id="toolGrid"></div><div class="empty" id="empty">In dieser Kategorie gibt es noch keine Werkzeuge.</div></section><section class="panel" id="panel" aria-live="polite"><div class="panel-head"><h2 id="panelTitle">Werkzeug</h2><button class="close" id="close">Schließen</button></div><div id="toolBody"></div></section><p class="note">Die Werkzeuge laufen direkt in deinem Browser. Deine Eingaben werden nicht an einen Toolboxly-Server gesendet.</p></main><footer class="wrap footer"><span>© <span id="year"></span> Toolboxly</span><a class="muted-link" href="../../index.html">Zur Startseite</a></footer><script src="../../assets/js/app.js?v=20261115"></script></body></html>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2537104692874620" crossorigin="anonymous"></script><meta name="description" content="Bilder direkt im Browser bearbeiten. Kostenlose Online-Tools von Toolboxly."><title>Bildwerkzeuge – Toolboxly</title><link rel="stylesheet" href="../../assets/css/style.css?v=20261115"><script>
+(async function () {
+  const currentVersion = "2026-11-15.2";
+  const params = new URLSearchParams(window.location.search);
+  if (params.get("toolboxly") === currentVersion) return;
+  try {
+    const response = await fetch("/version.json?check=" + Date.now(), { cache: "no-store" });
+    if (!response.ok) return;
+    const data = await response.json();
+    const latestVersion = String(data.version || "");
+    if (latestVersion && latestVersion !== currentVersion) {
+      params.set("toolboxly", latestVersion);
+      const query = params.toString();
+      window.location.replace(window.location.pathname + (query ? "?" + query : "") + window.location.hash);
+    } else if (latestVersion) {
+      params.set("toolboxly", currentVersion);
+      window.location.replace(window.location.pathname + "?" + params.toString() + window.location.hash);
+    }
+  } catch (error) {
+    console.warn("Toolboxly: Versionsprüfung nicht möglich.", error);
+  }
+})();
+</script></head><body data-category="image"><header class="wrap top"><a class="brand" href="../../index.html">toolbox<span>ly</span></a><nav><a href="../../index.html#kategorien">Kategorien</a><a href="../../index.html#werkzeuge">Alle Werkzeuge</a></nav></header><main class="wrap"><div class="breadcrumbs"><a href="../../index.html">Startseite</a> / Bildwerkzeuge</div><section class="page-title"><span class="eyebrow">TOOLBOXLY · KATEGORIE</span><h1>Bildwerkzeuge</h1><p>Bilder direkt im Browser bearbeiten.</p></section><section><div class="section-head"><div><h2>Verfügbare Werkzeuge</h2><p>Wähle ein Werkzeug aus der Liste.</p></div><span id="count" style="font-size:12px;color:var(--muted)"></span></div><div class="grid" id="toolGrid"></div><div class="empty" id="empty">In dieser Kategorie gibt es noch keine Werkzeuge.</div></section><section class="panel" id="panel" aria-live="polite"><div class="panel-head"><h2 id="panelTitle">Werkzeug</h2><button class="close" id="close">Schließen</button></div><div id="toolBody"></div></section><p class="note">Die Werkzeuge laufen direkt in deinem Browser. Deine Eingaben werden nicht an einen Toolboxly-Server gesendet.</p></main><footer class="wrap footer"><span>© <span id="year"></span> Toolboxly</span><a class="muted-link" href="../../index.html">Zur Startseite</a></footer><script src="../../assets/js/app.js?v=20261115"></script></body></html>
